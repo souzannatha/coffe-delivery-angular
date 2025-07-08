@@ -1,4 +1,4 @@
-//@use "./styles/variables" as *;
+@use "./styles/variables" as *;
 
 * {
   margin: 0;
@@ -9,5 +9,6 @@
 }
 
 body {
-  //background-color: $gray-100;
+  color: $base-text;
+  background: $background;
 }
