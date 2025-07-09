@@ -1,0 +1,21 @@
+@use "../../../styles/variables" as *;
+
+.primary-button {
+  width: 132px;
+  height: 46px;
+  padding: 12px 8px;
+  background: $yellow;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: $white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 160%;
+}
+
+.primary-button:hover {
+  background: $yellow-dark;
+}

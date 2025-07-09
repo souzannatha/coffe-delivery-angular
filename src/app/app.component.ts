@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PrimaryButtonComponent } from './_components/primary-button/primary-button.component';
+import { SecondaryButtonComponent } from './_components/secondary-button/secondary-button.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PrimaryButtonComponent, SecondaryButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

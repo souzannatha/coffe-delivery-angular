@@ -1,0 +1,33 @@
+@use "../../../styles/variables" as *;
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 91px;
+  height: 32px;
+  padding: 0px 8px;
+  background: $base-button;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  color: $base-text;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.ph-trash {
+  font-size: 16px;
+  color: $purple;
+}
+
+.secondary-button:hover {
+  background: $base-hover;
+  color: $purple-dark;
+  color: $base-subtitle;
+}
