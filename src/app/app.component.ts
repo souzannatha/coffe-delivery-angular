@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PrimaryButtonComponent } from './_components/primary-button/primary-button.component';
-import { SecondaryButtonComponent } from './_components/secondary-button/secondary-button.component';
+import { PrimaryButtonComponent } from './shared/_components/primary-button/primary-button.component';
+import { SecondaryButtonComponent } from './shared/_components/secondary-button/secondary-button.component';
 
 @Component({
   selector: 'app-root',
