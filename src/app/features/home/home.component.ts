@@ -1,11 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { rgba } from 'polished';
 
 @Component({
   selector: 'app-home',
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  white = '#ffffff';
+  background = '#fafafa';
 
+  backgroundGradient!: string;
+  introBackgroundImg = '/assets/background.png';
+
+  ngOnInit() {
+    this.backgroundGradient = `url(${this.introBackgroundImg}) repeat center,
+      linear-gradient(
+        0deg,
+        ${this.white} 0%,
+        ${rgba(this.background, 0.2)} 50%,
+        ${this.background} 100%
+      )`;
+  }
 }
