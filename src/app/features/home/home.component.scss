@@ -32,5 +32,13 @@ main {
     font-weight: 400;
     line-height: 130%;
     color: $base-subtitle;
+    margin-bottom: 66px;
   }
+}
+
+.icons-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 570px;
 }

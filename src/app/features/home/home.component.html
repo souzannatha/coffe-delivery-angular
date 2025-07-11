@@ -6,7 +6,14 @@
         Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
         hora.
       </p>
+      <div class="icons-list">
+        <app-icon-with-text
+          *ngFor="let iconText of iconAndTextList"
+          [data]="iconText"
+        ></app-icon-with-text>
+      </div>
     </div>
+
     <img
       src="/assets/main-coffe.svg"
       alt="foto de um copo de café"
