@@ -22,17 +22,16 @@
   </div>
 </main>
 <section>
-  <h3 class="title-coffe">Nossos cafés</h3>
-  <div class="coffe-card">
-    <div class="img">
-      <img src="/assets/coffe.svg" width="120px" height="120px" />
-    </div>
-    <div class="detail-card">
-      <p>Tradicional</p>
-    </div>
-    <div class="nameAndDescriptionCoffe">
-      <h4>Expresso Tradicional</h4>
-      <p>O tradicional café feito com água quente e grãos moídos</p>
+  <div>
+    <h3 class="title-coffe">Nossos cafés</h3>
+    <div class="coffe-list">
+      <app-coffe-card
+        *ngFor="let cafe of coffeList"
+        [title]="cafe.title"
+        [subtitle]="cafe.subtitle"
+        [detail]="cafe.detail"
+        [image]="cafe.image"
+      ></app-coffe-card>
     </div>
   </div>
 </section>
