@@ -1,5 +1,5 @@
-<main [style.background]="backgroundGradient">
-  <div class="container">
+<main>
+  <div class="container" [style.background]="backgroundGradient">
     <div class="title-container">
       <h1>Encontre o café perfeito para qualquer hora do dia</h1>
       <p>
@@ -13,7 +13,6 @@
         ></app-icon-with-text>
       </div>
     </div>
-
     <img
       src="/assets/main-coffe.svg"
       alt="foto de um copo de café"
@@ -22,3 +21,18 @@
     />
   </div>
 </main>
+<section>
+  <h3 class="title-coffe">Nossos cafés</h3>
+  <div class="coffe-card">
+    <div class="img">
+      <img src="/assets/coffe.svg" width="120px" height="120px" />
+    </div>
+    <div class="detail-card">
+      <p>Tradicional</p>
+    </div>
+    <div class="nameAndDescriptionCoffe">
+      <h4>Expresso Tradicional</h4>
+      <p>O tradicional café feito com água quente e grãos moídos</p>
+    </div>
+  </div>
+</section>
