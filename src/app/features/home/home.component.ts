@@ -52,6 +52,7 @@ export class HomeComponent implements OnInit {
       bgColor: '#8047f8',
     },
   ];
+
   coffeList: coffeeCard[] = [
     {
       title: 'Expresso Tradicional',
