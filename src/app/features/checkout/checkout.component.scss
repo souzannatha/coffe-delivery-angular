@@ -1,0 +1,72 @@
+@use "../../../styles/variables" as *;
+
+.checkoutTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: $base-subtitle;
+  line-height: 130%;
+  font-family: "Baloo 2";
+  margin-bottom: 15px;
+}
+
+.checkoutWrapper {
+  width: 640px;
+  height: 372px;
+  background-color: $base-card;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.checkoutAdress {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 32px;
+
+  .ph-map-pin-line {
+    font-size: 22px;
+    color: $yellow-dark;
+  }
+}
+
+.checkoutSubtitle {
+  line-height: 130%;
+  font-weight: 400;
+
+  p {
+    font-size: 16px;
+    line-height: 130%;
+    color: $base-subtitle;
+  }
+
+  span {
+    font-size: 14px;
+    color: $base-text;
+  }
+}
+
+.gridCep,
+.gridNeighborhoodAndCity,
+.gridNumberAndComplement,
+.gridStreet {
+  display: grid;
+  margin-bottom: 16px;
+}
+
+.gridCep {
+  grid-template-columns: 200px;
+}
+
+.gridStreet {
+  grid-template-columns: repeat(1fr);
+}
+
+.gridNumberAndComplement {
+  grid-template-columns: 200px 2fr;
+  gap: 12px;
+}
+
+.gridNeighborhoodAndCity {
+  grid-template-columns: 200px 1fr 60px;
+  gap: 12px;
+}

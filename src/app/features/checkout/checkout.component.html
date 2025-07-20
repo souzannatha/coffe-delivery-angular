@@ -1,9 +1,30 @@
 <section>
-  <h3 class="checkout-title">Complete seu pedido</h3>
-  <div>
-    <div>
-      <p>Endereço de Entrega</p>
-      <span>Informe o endereço onde deseja receber seu pedido</span>
+  <h3 class="checkoutTitle">Complete seu pedido</h3>
+  <div class="checkoutWrapper">
+    <div class="checkoutAdress">
+      <i class="ph ph-map-pin-line"></i>
+      <div class="checkoutSubtitle">
+        <p>Endereço de Entrega</p>
+        <span>Informe o endereço onde deseja receber seu pedido</span>
+      </div>
+    </div>
+    <div class="gridCep">
+      <app-input-text labelText="CEP"></app-input-text>
+    </div>
+    <div class="gridStreet">
+      <app-input-text labelText="Rua"></app-input-text>
+    </div>
+    <div class="gridNumberAndComplement">
+      <app-input-text labelText="Número"></app-input-text>
+      <app-input-text
+        labelText="Complemento"
+        [showOptional]="true"
+      ></app-input-text>
+    </div>
+    <div class="gridNeighborhoodAndCity">
+      <app-input-text labelText="Bairro"></app-input-text>
+      <app-input-text labelText="Cidade"></app-input-text>
+      <app-input-text labelText="UF"></app-input-text>
     </div>
   </div>
 </section>

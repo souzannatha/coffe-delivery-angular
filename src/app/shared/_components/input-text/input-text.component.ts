@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-input-text',
@@ -8,5 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-text.component.scss'],
 })
 export class InputTextComponent {
-  showOptional = false;
+  @Input() showOptional: boolean = false;
+  @Input() labelText!: string;
 }
