@@ -1,0 +1,30 @@
+@use "../../../../styles/variables" as *;
+
+.selectPayment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 178px;
+  height: 51px;
+  background-color: $base-button;
+  color: $base-text;
+  font-size: 12px;
+  line-height: 160%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+  transition: 0.3s;
+
+  cursor: pointer;
+  .ph-credit-card {
+    font-size: 16px;
+    color: $purple;
+  }
+}
+
+.selectPayment:hover {
+  background-color: $base-hover;
+  color: $base-subtitle;
+}

@@ -15,6 +15,7 @@
   background-color: $base-card;
   padding: 40px;
   border-radius: 6px;
+  margin-bottom: 12px;
 }
 
 .checkoutAdress {
@@ -69,4 +70,49 @@
 .gridNeighborhoodAndCity {
   grid-template-columns: 200px 1fr 60px;
   gap: 12px;
+}
+
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+  background-color: $base-card;
+  width: 640px;
+  height: 207px;
+  padding: 40px;
+  border-radius: 6px;
+
+  .ph-currency-dollar {
+    font-size: 22px;
+    color: $purple;
+  }
+}
+
+.payment {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.paymentSubtitle {
+  line-height: 130%;
+  font-weight: 400;
+
+  p {
+    font-size: 16px;
+    line-height: 130%;
+    color: $base-subtitle;
+  }
+
+  span {
+    font-size: 14px;
+    color: $base-text;
+  }
+}
+
+.methodPayment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

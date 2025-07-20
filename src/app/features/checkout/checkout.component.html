@@ -27,4 +27,23 @@
       <app-input-text labelText="UF"></app-input-text>
     </div>
   </div>
+  <div class="paymentWrapper">
+    <div class="payment">
+      <i class="ph ph-currency-dollar"></i>
+      <div class="paymentSubtitle">
+        <p>Pagamento</p>
+        <span
+          >O pagamento é feito na entrega. Escolha a forma de deseja pagar</span
+        >
+      </div>
+    </div>
+    <div class="methodPayment">
+      <app-select-payment
+        *ngFor="let payment of methodPaymentList"
+        [icon]="payment.icon"
+        [text]="payment.text"
+      ></app-select-payment>
+    </div>
+  </div>
 </section>
+//TODO: Finalizar estilo de selected
