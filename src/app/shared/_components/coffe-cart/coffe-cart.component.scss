@@ -1,0 +1,85 @@
+@use "../../../../styles/variables" as *;
+.coffeeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $base-card;
+  flex-direction: row;
+  width: 368px;
+  margin-bottom: 24px;
+}
+
+.titleAndQuantity {
+  margin-left: 20px;
+  p {
+    font-size: 16px;
+    line-height: 130%;
+    color: $base-subtitle;
+  }
+}
+.quantityAndRemove {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  background-color: $base-button;
+  padding: 8px;
+  border-radius: 6px;
+  width: 72px;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    .ph {
+      font-size: 14px;
+      color: $purple;
+      font-weight: 700;
+    }
+  }
+}
+
+.trashButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-button;
+  padding: 10px 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  p {
+    margin-left: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $base-text;
+  }
+
+  .ph {
+    font-size: 16px;
+    color: $purple;
+  }
+}
+
+.value {
+  font-size: 16px;
+  color: $base-text;
+  line-height: auto;
+  margin-left: 50px;
+  font-weight: 500;
+}
+.separator {
+  width: 368px;
+  height: 1px;
+  background-color: $base-button;
+  margin-bottom: 24px;
+}
