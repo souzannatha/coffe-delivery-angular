@@ -1,50 +1,79 @@
 <section>
-  <h3 class="checkoutTitle">Complete seu pedido</h3>
-  <div class="checkoutWrapper">
-    <div class="checkoutAdress">
-      <i class="ph ph-map-pin-line"></i>
-      <div class="checkoutSubtitle">
-        <p>Endereço de Entrega</p>
-        <span>Informe o endereço onde deseja receber seu pedido</span>
-      </div>
-    </div>
-    <div class="gridCep">
-      <app-input-text labelText="CEP"></app-input-text>
-    </div>
-    <div class="gridStreet">
-      <app-input-text labelText="Rua"></app-input-text>
-    </div>
-    <div class="gridNumberAndComplement">
-      <app-input-text labelText="Número"></app-input-text>
-      <app-input-text
-        labelText="Complemento"
-        [showOptional]="true"
-      ></app-input-text>
-    </div>
-    <div class="gridNeighborhoodAndCity">
-      <app-input-text labelText="Bairro"></app-input-text>
-      <app-input-text labelText="Cidade"></app-input-text>
-      <app-input-text labelText="UF"></app-input-text>
-    </div>
+  <div class="titles">
+    <h3 class="checkoutTitle">Complete seu pedido</h3>
+    <h3 class="checkoutTitle">Cafés selecionados</h3>
   </div>
-  <div class="paymentWrapper">
-    <div class="payment">
-      <i class="ph ph-currency-dollar"></i>
-      <div class="paymentSubtitle">
-        <p>Pagamento</p>
-        <span
-          >O pagamento é feito na entrega. Escolha a forma de deseja pagar</span
-        >
+  <div class="container">
+    <div class="wrapper">
+      <div class="checkoutWrapper">
+        <div class="checkoutAdress">
+          <i class="ph ph-map-pin-line"></i>
+          <div class="checkoutSubtitle">
+            <p>Endereço de Entrega</p>
+            <span>Informe o endereço onde deseja receber seu pedido</span>
+          </div>
+        </div>
+        <div class="gridCep">
+          <app-input-text labelText="CEP"></app-input-text>
+        </div>
+        <div class="gridStreet">
+          <app-input-text labelText="Rua"></app-input-text>
+        </div>
+        <div class="gridNumberAndComplement">
+          <app-input-text labelText="Número"></app-input-text>
+          <app-input-text
+            labelText="Complemento"
+            [showOptional]="true"
+          ></app-input-text>
+        </div>
+        <div class="gridNeighborhoodAndCity">
+          <app-input-text labelText="Bairro"></app-input-text>
+          <app-input-text labelText="Cidade"></app-input-text>
+          <app-input-text labelText="UF"></app-input-text>
+        </div>
+      </div>
+
+      <div class="paymentWrapper">
+        <div class="payment">
+          <i class="ph ph-currency-dollar"></i>
+          <div class="paymentSubtitle">
+            <p>Pagamento</p>
+            <span
+              >O pagamento é feito na entrega. Escolha a forma de deseja
+              pagar</span
+            >
+          </div>
+        </div>
+        <div class="methodPayment">
+          <app-select-payment
+            *ngFor="let payment of methodPaymentList"
+            [icon]="payment.icon"
+            [text]="payment.text"
+            [isSelected]="selectedPayment === payment.text"
+            (select)="onSelectPayment(payment.text)"
+          ></app-select-payment>
+        </div>
       </div>
     </div>
-    <div class="methodPayment">
-      <app-select-payment
-        *ngFor="let payment of methodPaymentList"
-        [icon]="payment.icon"
-        [text]="payment.text"
-        [isSelected]="selectedPayment === payment.text"
-        (select)="onSelectPayment(payment.text)"
-      ></app-select-payment>
+
+    <div class="selectedCoffee">
+      <app-coffe-cart></app-coffe-cart>
+      <app-coffe-cart></app-coffe-cart>
+      <div class="InfoItems">
+        <div class="infoItem">
+          <p>Total de itens</p>
+          <span>R$ 29,70</span>
+        </div>
+        <div class="infoItem">
+          <p>Entrega</p>
+          <span>R$ 3,50</span>
+        </div>
+        <div class="infoItem total">
+          <p>Total</p>
+          <span>R$ 33,20</span>
+        </div>
+        <app-primary-button></app-primary-button>
+      </div>
     </div>
   </div>
 </section>
