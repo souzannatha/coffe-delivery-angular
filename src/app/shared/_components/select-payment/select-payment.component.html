@@ -1,4 +1,8 @@
-<button class="selectPayment">
+<button
+  class="selectPayment"
+  [class.selected]="isSelected"
+  (click)="select.emit()"
+>
   <i class="{{ icon }}"></i>
   {{ text }}
 </button>

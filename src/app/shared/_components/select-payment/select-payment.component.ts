@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-select-payment',
@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class SelectPaymentComponent {
   @Input() icon!: string;
   @Input() text!: string;
+  @Input() isSelected: boolean = false;
+  @Output() select = new EventEmitter<void>();
 }

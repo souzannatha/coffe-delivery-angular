@@ -42,6 +42,8 @@
         *ngFor="let payment of methodPaymentList"
         [icon]="payment.icon"
         [text]="payment.text"
+        [isSelected]="selectedPayment === payment.text"
+        (select)="onSelectPayment(payment.text)"
       ></app-select-payment>
     </div>
   </div>

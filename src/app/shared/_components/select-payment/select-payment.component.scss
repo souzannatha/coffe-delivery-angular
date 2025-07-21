@@ -28,3 +28,8 @@
   background-color: $base-hover;
   color: $base-subtitle;
 }
+
+.selectPayment.selected {
+  background-color: $purple-light;
+  border: 1px solid $purple;
+}

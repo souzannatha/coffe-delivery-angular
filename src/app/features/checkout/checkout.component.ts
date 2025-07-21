@@ -11,6 +11,8 @@ import { SelectPaymentComponent } from '../../shared/_components/select-payment/
   imports: [InputTextComponent, CommonModule, SelectPaymentComponent],
 })
 export class CheckoutComponent {
+  selectedPayment: string | null = null;
+
   methodPaymentList = [
     {
       icon: 'ph ph-credit-card',
@@ -25,4 +27,8 @@ export class CheckoutComponent {
       text: 'Dinheiro',
     },
   ];
+
+  onSelectPayment(paymentText: string) {
+    this.selectedPayment = paymentText;
+  }
 }
