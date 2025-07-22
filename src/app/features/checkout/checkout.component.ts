@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SelectPaymentComponent } from '../../shared/_components/select-payment/select-payment.component';
 import { CoffeCartComponent } from '../../shared/_components/coffe-cart/coffe-cart.component';
 import { PrimaryButtonComponent } from '../../shared/_components/primary-button/primary-button.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-checkout',
@@ -15,6 +16,7 @@ import { PrimaryButtonComponent } from '../../shared/_components/primary-button/
     SelectPaymentComponent,
     CoffeCartComponent,
     PrimaryButtonComponent,
+    RouterLink,
   ],
 })
 export class CheckoutComponent {

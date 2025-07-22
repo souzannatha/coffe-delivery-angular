@@ -1,0 +1,42 @@
+@use "../../../styles/variables" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sucessTitle {
+  margin-bottom: 40px;
+  h3 {
+    font-size: 32px;
+    font-family: "Baloo 2";
+    line-height: 130%;
+    font-weight: 900;
+    color: $yellow-dark;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 130%;
+    color: $base-subtitle;
+  }
+}
+.deliversInformation {
+  width: 526px;
+  height: 270px;
+  border-radius: 6px 36px 6px 36px;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #dbac2c, #8047f8) border-box;
+}
+
+.containerIconText {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: 40px;
+  gap: 40px;
+  margin-top: 40px;
+  max-width: 354px;
+}

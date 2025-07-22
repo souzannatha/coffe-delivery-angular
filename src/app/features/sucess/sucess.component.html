@@ -1,0 +1,17 @@
+<section>
+  <div class="sucessTitle">
+    <h3>Uhu! Pedido confirmado</h3>
+    <p>Agora é só aguardar que logo o café chegará até você</p>
+  </div>
+  <div class="container">
+    <div class="deliversInformation">
+      <div class="containerIconText">
+        <app-icon-with-text
+          *ngFor="let iconText of iconAndTextList"
+          [data]="iconText"
+        ></app-icon-with-text>
+      </div>
+    </div>
+    <img src="/assets/illustration.svg" width="492" />
+  </div>
+</section>
